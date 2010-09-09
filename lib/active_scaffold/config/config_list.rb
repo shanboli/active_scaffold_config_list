@@ -17,7 +17,7 @@ module ActiveScaffold::Config
     def self.link=(val)
       @@link = val
     end
-    @@link = ActiveScaffold::DataStructures::ActionLink.new('prepare_config_list', :label => 'List columns..', :type => :table, :security_method => :create_authorized?)
+    @@link = ActiveScaffold::DataStructures::ActionLink.new('prepare_config_list', :label => 'Config Columns', :type => :table, :security_method => :create_authorized?)
 
     # configures where the plugin itself is located. there is no instance version of this.
     cattr_accessor :plugin_directory
@@ -39,6 +39,6 @@ module ActiveScaffold::Config
     @enabled = true
     attr_accessor :enabled
 
-    ActionController::Resources::Resource::ACTIVE_SCAFFOLD_ROUTING[:collection][:prepare_config_list] = :get    
+    ActionController::Resources::Resource::ACTIVE_SCAFFOLD_ROUTING[:collection][:prepare_config_list] = :get
   end
 end
