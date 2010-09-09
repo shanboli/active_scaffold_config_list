@@ -1,5 +1,7 @@
-Added routes, works with AS rails-2.3 branch and RoR 2.3.8 
+Added routes, works with AS rails-2.3 branch and RoR 2.3.8
+Added an icon at label 
 
+---------------------
 This works with Rails 2.3 and the rails-2.3 branch of ActiveScaffold.
 Clone or view the source at: http://github.com/bonefish/active_scaffold_config_list
 
