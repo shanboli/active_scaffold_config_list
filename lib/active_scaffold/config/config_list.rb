@@ -32,11 +32,13 @@ module ActiveScaffold::Config
 
     @available_columns = Array.new
     attr_accessor :available_columns
-    
+
     @default_columns = Array.new
     attr_accessor :default_columns
-    
+
     @enabled = true
     attr_accessor :enabled
+
+    ActionController::Resources::Resource::ACTIVE_SCAFFOLD_ROUTING[:collection][:prepare_config_list] = :get    
   end
 end
