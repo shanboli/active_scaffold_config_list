@@ -1,2 +1,6 @@
 /* IE hacks
    ==================================== */
+.active-scaffold-header div.actions a.prepare_config_list {
+background-image: none;
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/active_scaffold/default/config_list.png', sizingMethod='crop');
+}
